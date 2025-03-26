@@ -5,7 +5,7 @@ def cache(func: Callable) -> Callable:
     # Dictionary to store cached results for each function
     func_cache = {}
 
-    def wrapper(*args, **kwargs) -> str:
+    def wrapper(*args, **kwargs) -> any:
         # Create a key from the function name and arguments
         # Since we're only dealing with immutable arguments,
         # we can use them as dict keys
